@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiosque Ana — Café com Fofoca</title>
+<meta name="description" content="Quiosque Ana: café, lanches, vitaminas e muita fofoca boa. Aberto de segunda a sábado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/logo.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header__row">
+    <a class="wordmark" href="#topo">Quiosque <em>Ana</em></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Abrir menu</span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#horarios">Horários</a>
+      <a href="#sobre">A fofoca</a>
+      <a href="#visita">Onde estamos</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+
+  <section class="hero">
+    <div class="wrap hero__inner">
+    <div class="hero__text">
+      <p class="hero__kicker">café · lanches · vitaminas</p>
+      <h1 class="hero__title">Café bom e<br>fofoca melhor ainda.</h1>
+      <p class="hero__lede">No Quiosque Ana o cafezinho vem quentinho, o lanche vem caprichado e a mesa vira roda de conversa. Passa aqui, senta um pouco e fica por dentro de tudo.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#cardapio">Ver o cardápio</a>
+        <a class="btn btn--ghost" href="https://instagram.com/quiosque_ana" target="_blank" rel="noopener">Seguir no Instagram</a>
+      </div>
+      <p class="hero__faith">Acreditando em Deus sempre 🙌</p>
+    </div>
+
+    <div class="hero__mascot">
+      <img class="mascot-logo" src="assets/logo.png" alt="Logo do Quiosque Ana: mascote pantera cor-de-rosa de boné, segurando um copo e um prato de salgadinhos" width="672" height="700">
+    </div>
+    </div>
+  </section>
+
+  <section class="menu" id="cardapio">
+    <div class="wrap">
+      <h2 class="section-title">O que tem na mesa</h2>
+      <div class="menu__grid">
+        <article class="menu-card menu-card--coffee">
+          <h3>Café</h3>
+          <ul>
+            <li>Cafézinho coado</li>
+            <li>Café com leite</li>
+            <li>Cappuccino cremoso</li>
+            <li>Chocolate quente</li>
+          </ul>
+        </article>
+        <article class="menu-card menu-card--snack">
+          <h3>Lanches</h3>
+          <ul>
+            <li>Misto quente</li>
+            <li>Pão de queijo</li>
+            <li>Tapioca recheada</li>
+            <li>Salgados fresquinhos</li>
+          </ul>
+        </article>
+        <article class="menu-card menu-card--drink">
+          <h3>Vitaminas</h3>
+          <ul>
+            <li>Banana com aveia</li>
+            <li>Morango com leite</li>
+            <li>Abacaxi com hortelã</li>
+            <li>Açaí na tigela</li>
+          </ul>
+        </article>
+      </div>
+      <p class="menu__note">Cardápio ilustrativo — os preços e o queridinho do dia ficam no balcão.</p>
+    </div>
+  </section>
+
+  <section class="horarios" id="horarios">
+    <div class="wrap horarios__inner">
+      <div class="horarios__copy">
+        <h2 class="section-title">Quando a porta tá aberta</h2>
+        <p>De segunda a sábado, em dois turnos — de manhã pro café e à tarde pra bater um papo.</p>
+      </div>
+      <div class="horarios__card">
+        <div class="turno">
+          <span class="turno__hora">6:30 — 11:30</span>
+          <span class="turno__label">manhã</span>
+        </div>
+        <div class="turno-divider" aria-hidden="true"></div>
+        <div class="turno">
+          <span class="turno__hora">a partir das 17:00</span>
+          <span class="turno__label">tarde</span>
+        </div>
+        <p class="horarios__dias">Segunda a sábado · fechado aos domingos</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="wrap sobre__inner">
+      <svg class="sobre__paw" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="62" r="26"/>
+        <circle cx="22" cy="34" r="12"/>
+        <circle cx="50" cy="20" r="12"/>
+        <circle cx="78" cy="34" r="12"/>
+      </svg>
+      <blockquote class="sobre__quote">
+        “Aqui ninguém toma café sozinho. Senta, pede o de sempre e em cinco minutos já sabe as novidades da rua inteira.”
+      </blockquote>
+      <p class="sobre__assinatura">— o jeitinho do Quiosque Ana</p>
+    </div>
+  </section>
+
+  <section class="visita" id="visita">
+    <div class="wrap visita__inner">
+      <div>
+        <h2 class="section-title section-title--light">Vem tomar um café</h2>
+        <p class="visita__texto">Segue a gente pra ver o cardápio do dia, os bastidores e claro, a fofoca boa de sempre.</p>
+        <div class="visita__actions">
+          <a class="btn btn--primary" href="https://instagram.com/quiosque_ana" target="_blank" rel="noopener">@quiosque_ana</a>
+        </div>
+      </div>
+      <div class="visita__card">
+        <p class="visita__card-title">Quiosque Ana</p>
+        <p>Café com fofoca ☕💕</p>
+        <p>Segunda a sábado</p>
+        <p>6:30–11:30 e a partir das 17:00</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__row">
+    <span>Quiosque Ana — café com fofoca</span>
+    <span>feito com carinho e muito pó de café</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

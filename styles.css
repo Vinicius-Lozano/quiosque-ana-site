@@ -161,6 +161,11 @@ img{ max-width:100%; display:block; }
   color: var(--plum-900);
 }
 .btn--ghost:hover{ background: var(--pink-100); }
+.btn--ghost-light{
+  border-color: rgba(255,255,255,0.6);
+  color: var(--cream);
+}
+.btn--ghost-light:hover{ background: rgba(255,255,255,0.12); }
 
 .hero__faith{
   margin-top: 26px;
@@ -194,17 +199,22 @@ img{ max-width:100%; display:block; }
 .menu{ position:relative; z-index:1; padding-block: 70px 30px; }
 .menu__grid{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 22px;
+  align-items: start;
 }
 .menu-card{
   background: var(--card-bg);
   padding: 30px 28px;
   border: 1px solid var(--pink-200);
+  border-radius: 28px 28px 28px 6px;
 }
-.menu-card--coffee{ border-radius: 28px 28px 28px 6px; }
-.menu-card--snack{ border-radius: 6px 28px 28px 28px; }
-.menu-card--drink{ border-radius: 28px 6px 28px 28px; }
+.menu-card:nth-child(3n+2){ border-radius: 6px 28px 28px 28px; }
+.menu-card:nth-child(3n+3){ border-radius: 28px 6px 28px 28px; }
+.menu-card--feature{
+  background: var(--pink-100);
+  border-color: var(--pink-400);
+}
 .menu-card h3{
   font-size: 1.4rem;
   color: var(--pink-600);
@@ -217,6 +227,30 @@ img{ max-width:100%; display:block; }
   color: var(--plum-700);
 }
 .menu-card li:first-child{ border-top: none; }
+.menu-card__hint{
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--plum-700);
+  opacity: 0.8;
+  margin-top: 2px;
+}
+.menu-card__badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+.menu-card__badges span{
+  background: var(--cream);
+  border: 1px solid var(--pink-400);
+  color: var(--pink-600);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
 .menu__note{
   margin-top: 26px;
   font-size: 0.92rem;
@@ -300,7 +334,7 @@ img{ max-width:100%; display:block; }
   max-width: 42ch;
   font-size: 1.05rem;
 }
-.visita__actions{ margin-top: 28px; }
+.visita__actions{ margin-top: 28px; display:flex; flex-wrap: wrap; gap: 14px; }
 .visita__card{
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.22);

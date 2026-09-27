@@ -21,6 +21,7 @@
       <span class="sr-only">Abrir menu</span>
     </button>
     <nav class="site-nav" id="siteNav">
+      <a href="#vitaminas">Vitaminas</a>
       <a href="#cardapio">Cardápio</a>
       <a href="#horarios">Horários</a>
       <a href="#sobre">A fofoca</a>
@@ -50,126 +51,157 @@
     </div>
   </section>
 
+  <section class="vitaminas" id="vitaminas">
+    <div class="wrap vitaminas__inner">
+      <span class="vitaminas__banner">
+        <svg class="vitaminas__banner-heart" viewBox="0 0 24 22" fill="currentColor" aria-hidden="true"><path d="M12 21 C4 14 1 9 1 6 A5 5 0 0 1 11 4 A5 5 0 0 1 21 6 C21 9 18 14 12 21 Z"/></svg>
+        Aqui no Quiosque Ana
+        <svg class="vitaminas__banner-heart" viewBox="0 0 24 22" fill="currentColor" aria-hidden="true"><path d="M12 21 C4 14 1 9 1 6 A5 5 0 0 1 11 4 A5 5 0 0 1 21 6 C21 9 18 14 12 21 Z"/></svg>
+      </span>
+      <h2 class="section-title vitaminas__title">Vitaminas</h2>
+
+      <div class="vitaminas__grid">
+        <article class="vitamina vitamina--rosada">
+          <img class="vitamina__photo" src="assets/vitaminas/fruta-rosada.jpg" alt="Vitamina de Fruta-Rosada num copo, com mamão e beterraba ao lado" width="200" height="220" loading="lazy">
+          <span class="vitamina__label">Vitamina de</span>
+          <h3 class="vitamina__name">Fruta-Rosada</h3>
+          <p class="vitamina__desc">Cremosa, deliciosa e cheia de sabor amazônico.</p>
+        </article>
+        <article class="vitamina vitamina--abacate">
+          <img class="vitamina__photo" src="assets/vitaminas/abacate.jpg" alt="Vitamina de Abacate num copo, com abacate ao lado" width="200" height="220" loading="lazy">
+          <span class="vitamina__label">Vitamina de</span>
+          <h3 class="vitamina__name">Abacate</h3>
+          <p class="vitamina__desc">Nutritiva, encorpada e perfeita pra dar energia.</p>
+        </article>
+        <article class="vitamina vitamina--banana">
+          <img class="vitamina__photo" src="assets/vitaminas/banana.jpg" alt="Vitamina de Banana num copo, com bananas ao lado" width="200" height="220" loading="lazy">
+          <span class="vitamina__label">Vitamina de</span>
+          <h3 class="vitamina__name">Banana</h3>
+          <p class="vitamina__desc">Clássica, saudável e muito saborosa.</p>
+        </article>
+        <article class="vitamina vitamina--guarana">
+          <img class="vitamina__photo" src="assets/vitaminas/guarana.jpg" alt="Vitamina de Guaraná das Amazonas num copo, com frutos de guaraná ao lado" width="200" height="220" loading="lazy">
+          <span class="vitamina__label">Vitamina de</span>
+          <h3 class="vitamina__name">Guaraná das Amazonas</h3>
+          <p class="vitamina__desc">A energia natural da Amazônia numa bebida irresistível.</p>
+        </article>
+      </div>
+
+      <div class="vitaminas__badges">
+        <span><svg class="vitaminas__badge-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 L4 14 H11 L9 22 L20 8 H13 Z"/></svg>Feitas na hora</span>
+        <span><svg class="vitaminas__badge-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 C4 4 4 15 12 22 C20 15 20 4 12 2 Z"/><path d="M12 6 V18" stroke="var(--cream)" stroke-width="1.4" fill="none"/></svg>Ingredientes frescos</span>
+        <span><svg class="vitaminas__badge-icon" viewBox="0 0 24 22" fill="currentColor" aria-hidden="true"><path d="M12 21 C4 14 1 9 1 6 A5 5 0 0 1 11 4 A5 5 0 0 1 21 6 C21 9 18 14 12 21 Z"/></svg>Muito mais sabor pro seu dia</span>
+      </div>
+
+      <span class="vitaminas__banner">
+        <svg class="vitaminas__banner-heart" viewBox="0 0 24 22" fill="currentColor" aria-hidden="true"><path d="M12 21 C4 14 1 9 1 6 A5 5 0 0 1 11 4 A5 5 0 0 1 21 6 C21 9 18 14 12 21 Z"/></svg>
+        Aqui no Quiosque Ana
+        <svg class="vitaminas__banner-heart" viewBox="0 0 24 22" fill="currentColor" aria-hidden="true"><path d="M12 21 C4 14 1 9 1 6 A5 5 0 0 1 11 4 A5 5 0 0 1 21 6 C21 9 18 14 12 21 Z"/></svg>
+      </span>
+    </div>
+  </section>
+
   <section class="menu" id="cardapio">
     <div class="wrap">
       <h2 class="section-title">O que tem na mesa</h2>
 
-      <div class="menu__grid">
-        <article class="menu-card">
-          <h3>Bebidas quentes</h3>
-          <ul>
-            <li>Café</li>
-            <li>Café com leite</li>
-            <li>Café preto</li>
-            <li>Nescau</li>
-            <li>Leite</li>
-          </ul>
-        </article>
-
-        <article class="menu-card">
-          <h3>Bebidas geladas</h3>
-          <ul>
-            <li>Guaraná Amazonas</li>
-            <li>Vitamina de fruta</li>
-            <li>Suco natural
-              <span class="menu-card__hint">abacaxi, acerola, caju, cupuaçu, goiaba, maracujá</span>
-            </li>
-          </ul>
-        </article>
-
-        <article class="menu-card menu-card--feature">
-          <h3>Vitaminas</h3>
-          <ul>
-            <li>Fruta-Rosada
-              <span class="menu-card__hint">cremosa, deliciosa e cheia de sabor amazônico</span>
-            </li>
-            <li>Abacate
-              <span class="menu-card__hint">nutritiva, encorpada e perfeita pra dar energia</span>
-            </li>
-            <li>Banana
-              <span class="menu-card__hint">clássica, saudável e muito saborosa</span>
-            </li>
-            <li>Guaraná das Amazonas
-              <span class="menu-card__hint">a energia natural da Amazônia numa bebida irresistível</span>
-            </li>
-          </ul>
-          <div class="menu-card__badges">
-            <span>Feitas na hora</span>
-            <span>Ingredientes frescos</span>
-            <span>Muito mais sabor</span>
+      <div class="menu__columns">
+        <div class="menu__column">
+          <div class="menu-group">
+            <h3 class="menu-group__header">Bebidas quentes</h3>
+            <ul class="menu-group__list">
+              <li>Café</li>
+              <li>Café com leite</li>
+              <li>Café preto</li>
+              <li>Nescau</li>
+              <li>Leite</li>
+            </ul>
           </div>
-        </article>
 
-        <article class="menu-card">
-          <h3>Tapiocas</h3>
-          <ul>
-            <li>Tapioca simples</li>
-            <li>Tapioca com queijo</li>
-            <li>Tapioca com ovo</li>
-            <li>Tapioca com ovo e queijo</li>
-            <li>Tapioca com ovo, queijo e presunto</li>
-            <li>Tapioca doce
-              <span class="menu-card__hint">macia, saborosa e feita na hora com o recheio que você ama</span>
-            </li>
-          </ul>
-        </article>
+          <div class="menu-group">
+            <h3 class="menu-group__header">Bebidas geladas</h3>
+            <ul class="menu-group__list">
+              <li>Guaraná Amazonas</li>
+              <li>Vitamina de fruta</li>
+              <li>Suco natural
+                <span class="menu-group__hint">abacaxi, acerola, caju, cupuaçu, goiaba, maracujá</span>
+              </li>
+            </ul>
+          </div>
 
-        <article class="menu-card">
-          <h3>Sanduíches e pães</h3>
-          <ul>
-            <li>Misto (queijo e presunto)</li>
-            <li>Pão com queijo e presunto</li>
-            <li>Pão com queijo</li>
-            <li>Pão com presunto</li>
-            <li>Brotinho (presunto e queijo)</li>
-          </ul>
-        </article>
+          <div class="menu-group">
+            <h3 class="menu-group__header">Bebidas especiais</h3>
+            <ul class="menu-group__list">
+              <li>Abacatada
+                <span class="menu-group__hint">cremosa e refrescante, feita com abacate maduro e leite condensado</span>
+              </li>
+              <li>Cappuccino
+                <span class="menu-group__hint">tradicional, cremoso e irresistível — o abraço perfeito numa xícara</span>
+              </li>
+            </ul>
+          </div>
 
-        <article class="menu-card">
-          <h3>Salgados</h3>
-          <ul>
-            <li>Pastel (carne / queijo)</li>
-            <li>Coxinha</li>
-            <li>Orelha</li>
-            <li>Empada</li>
-          </ul>
-        </article>
+          <div class="menu-group">
+            <h3 class="menu-group__header">Chás</h3>
+            <ul class="menu-group__list">
+              <li>Erva-doce
+                <span class="menu-group__hint">leve, adocicado e digestivo</span>
+              </li>
+              <li>Camomila
+                <span class="menu-group__hint">suave e calmante, ajuda a relaxar</span>
+              </li>
+              <li>Hortelã
+                <span class="menu-group__hint">refrescante e revigorante</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-        <article class="menu-card">
-          <h3>Doces e bolos</h3>
-          <ul>
-            <li>Bolo de chocolate</li>
-            <li>Bolo de tapioca</li>
-            <li>Bananada</li>
-          </ul>
-        </article>
+        <div class="menu__column">
+          <div class="menu-group">
+            <h3 class="menu-group__header">Tapiocas</h3>
+            <ul class="menu-group__list">
+              <li>Tapioca simples</li>
+              <li>Tapioca com queijo</li>
+              <li>Tapioca com ovo</li>
+              <li>Tapioca com ovo e queijo</li>
+              <li>Tapioca com ovo, queijo e presunto</li>
+              <li>Tapioca doce
+                <span class="menu-group__hint">macia, saborosa e feita na hora com o recheio que você ama</span>
+              </li>
+            </ul>
+          </div>
 
-        <article class="menu-card">
-          <h3>Bebidas especiais</h3>
-          <ul>
-            <li>Abacatada
-              <span class="menu-card__hint">cremosa e refrescante, feita com abacate maduro e leite condensado</span>
-            </li>
-            <li>Cappuccino
-              <span class="menu-card__hint">tradicional, cremoso e irresistível — o abraço perfeito numa xícara</span>
-            </li>
-          </ul>
-        </article>
+          <div class="menu-group">
+            <h3 class="menu-group__header">Sanduíches e pães</h3>
+            <ul class="menu-group__list">
+              <li>Misto (queijo e presunto)</li>
+              <li>Pão com queijo e presunto</li>
+              <li>Pão com queijo</li>
+              <li>Pão com presunto</li>
+              <li>Brotinho (presunto e queijo)</li>
+            </ul>
+          </div>
 
-        <article class="menu-card">
-          <h3>Chás</h3>
-          <ul>
-            <li>Erva-doce
-              <span class="menu-card__hint">leve, adocicado e digestivo</span>
-            </li>
-            <li>Camomila
-              <span class="menu-card__hint">suave e calmante, ajuda a relaxar</span>
-            </li>
-            <li>Hortelã
-              <span class="menu-card__hint">refrescante e revigorante</span>
-            </li>
-          </ul>
-        </article>
+          <div class="menu-group">
+            <h3 class="menu-group__header">Salgados</h3>
+            <ul class="menu-group__list">
+              <li>Pastel (carne / queijo)</li>
+              <li>Coxinha</li>
+              <li>Orelha</li>
+              <li>Empada</li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h3 class="menu-group__header">Doces e bolos</h3>
+            <ul class="menu-group__list">
+              <li>Bolo de chocolate</li>
+              <li>Bolo de tapioca</li>
+              <li>Bananada</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <p class="menu__note">Aqui o café é forte e a fofoca é ainda melhor — preços e o queridinho do dia você confere no balcão ou chamando no WhatsApp.</p>

@@ -12,6 +12,11 @@
   --card-bg:  #fff5fa;
   --gold:     #f3c94f;
 
+  --vit-rosa:    #e0397a;
+  --vit-verde:   #5b8a3a;
+  --vit-banana:  #b9800f;
+  --vit-guarana: #8a5a34;
+
   --font-display: "Fraunces", serif;
   --font-body: "Nunito", sans-serif;
 
@@ -197,65 +202,155 @@ img{ max-width:100%; display:block; }
 
 /* ===== Menu ===== */
 .menu{ position:relative; z-index:1; padding-block: 70px 30px; }
-.menu__grid{
+.menu__columns{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 22px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 48px;
+  margin-top: 8px;
 }
-.menu-card{
-  background: var(--card-bg);
-  padding: 30px 28px;
-  border: 1px solid var(--pink-200);
-  border-radius: 28px 28px 28px 6px;
+.menu__column{
+  display:flex;
+  flex-direction: column;
+  gap: 32px;
 }
-.menu-card:nth-child(3n+2){ border-radius: 6px 28px 28px 28px; }
-.menu-card:nth-child(3n+3){ border-radius: 28px 6px 28px 28px; }
-.menu-card--feature{
-  background: var(--pink-100);
-  border-color: var(--pink-400);
+.menu-group__header{
+  display:inline-block;
+  background: var(--pink-500);
+  color: var(--cream);
+  font-weight: 800;
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 999px;
+  margin: 0 0 12px;
 }
-.menu-card h3{
-  font-size: 1.4rem;
-  color: var(--pink-600);
-  margin-bottom: 18px;
+.menu-group__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.menu-card li{
+.menu-group__list li{
   padding-block: 9px;
-  border-top: 1px dashed var(--pink-100);
-  font-weight: 600;
-  color: var(--plum-700);
+  border-top: 1px dashed var(--pink-200);
+  font-weight: 700;
+  color: var(--plum-900);
 }
-.menu-card li:first-child{ border-top: none; }
-.menu-card__hint{
+.menu-group__list li:first-child{ border-top: none; }
+.menu-group__hint{
   display: block;
   font-weight: 400;
   font-style: italic;
   font-size: 0.85rem;
   color: var(--plum-700);
-  opacity: 0.8;
+  opacity: 0.85;
   margin-top: 2px;
 }
-.menu-card__badges{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 20px;
-}
-.menu-card__badges span{
-  background: var(--cream);
-  border: 1px solid var(--pink-400);
-  color: var(--pink-600);
-  font-size: 0.78rem;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 999px;
-}
 .menu__note{
-  margin-top: 26px;
+  margin-top: 40px;
   font-size: 0.92rem;
   color: var(--plum-700);
   font-style: italic;
+}
+
+/* ===== Vitaminas ===== */
+.vitaminas{ position:relative; z-index:1; background: var(--pink-100); padding-block: 70px; }
+.vitaminas__inner{ text-align:center; }
+.vitaminas__banner{
+  display:inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--pink-600);
+  color: var(--cream);
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 8px 22px;
+  border-radius: 999px;
+}
+.vitaminas__banner-heart{
+  width: 13px;
+  height: 12px;
+  fill: var(--cream);
+  flex-shrink: 0;
+}
+.vitaminas__title{ margin-top: 18px; }
+.vitaminas__grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 32px;
+}
+.vitamina__photo{
+  width: 100px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0 auto 14px;
+  display: block;
+  border: 3px solid var(--cream);
+  box-shadow: 0 10px 22px -10px rgba(91, 15, 60, 0.4);
+}
+.vitamina--rosada{ color: var(--vit-rosa); }
+.vitamina--abacate{ color: var(--vit-verde); }
+.vitamina--banana{ color: var(--vit-banana); }
+.vitamina--guarana{ color: var(--vit-guarana); }
+.vitamina__label{
+  display:inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--cream);
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+.vitamina--rosada .vitamina__label{ background: var(--vit-rosa); }
+.vitamina--abacate .vitamina__label{ background: var(--vit-verde); }
+.vitamina--banana .vitamina__label{ background: var(--vit-banana); }
+.vitamina--guarana .vitamina__label{ background: var(--vit-guarana); }
+.vitamina__name{
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.vitamina--rosada .vitamina__name{ color: var(--vit-rosa); }
+.vitamina--abacate .vitamina__name{ color: var(--vit-verde); }
+.vitamina--banana .vitamina__name{ color: var(--vit-banana); }
+.vitamina--guarana .vitamina__name{ color: var(--vit-guarana); }
+.vitamina__desc{
+  color: var(--plum-700);
+  font-size: 0.92rem;
+  max-width: 24ch;
+  margin: 0 auto;
+}
+.vitaminas__badges{
+  margin: 40px 0 28px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.vitaminas__badges span{
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--cream);
+  border: 1px solid var(--pink-400);
+  color: var(--pink-600);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 999px;
+}
+.vitaminas__badge-icon{
+  width: 15px;
+  height: 15px;
+  fill: var(--pink-600);
+  flex-shrink: 0;
 }
 
 /* ===== Horarios ===== */
@@ -365,7 +460,7 @@ img{ max-width:100%; display:block; }
 @media (max-width: 900px){
   .hero__inner{ grid-template-columns: 1fr; padding-block: 44px 20px; }
   .hero__mascot{ order:-1; max-width: 320px; margin: 0 auto; }
-  .menu__grid{ grid-template-columns: 1fr; }
+  .menu__columns{ grid-template-columns: 1fr; }
   .horarios__inner{ grid-template-columns: 1fr; }
   .visita__inner{ grid-template-columns: 1fr; }
 }
